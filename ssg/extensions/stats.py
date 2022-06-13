@@ -17,5 +17,5 @@ def written():
 @hooks.register("stats")
 def stats():
     final_time = time.time() - start_time
-    average = final_time / total_written if total_written != 0 else 0
+    average = final_time / total_written if total_written else 0
 
